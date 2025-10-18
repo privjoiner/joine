@@ -40,7 +40,7 @@ async def identify(ws):
     }
     await ws.send(json.dumps(payload))
     logger.info("Sent client subscriptions")
-    logger.info("You must be on the chilli hub discord server and notasnek github (see repo)")
+    logger.info("must have  chilli premium for 10m+")
 
 async def message_check(event):
     channel_id = event['d']['channel_id']
@@ -86,7 +86,7 @@ async def message_check(event):
             logger.info(f"Sent {parsed['name']} in category {category}: {parsed['money']} M/s")
 
             if random.randint(0, 6) == 1:
-                logger.info(f"You are using FREE AutoJoiner from notasnek: github.com/notasnek/roblox-autojoiner")
+                logger.info(f"volt joiner")
         except Exception as e:
             logger.debug(f"Failed to check message: {e}")
 
@@ -125,4 +125,4 @@ async def listener():
             await asyncio.sleep(3)
             continue
 
-# https://github.com/notasnek/roblox-autojoiner
+
