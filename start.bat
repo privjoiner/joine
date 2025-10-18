@@ -1,6 +1,7 @@
 @echo off
-title Autojoiner
+VOLT JOINER
 
 python main.py
+
 
 pause
